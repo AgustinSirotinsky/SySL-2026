@@ -7,8 +7,6 @@ c. La T.T
 d. Crear la G.R
 
 a.
-b*a*a*c^n + b*a*c^n*a + b*c^n+a+a
-
 
 b.
                         bc
@@ -32,6 +30,8 @@ c.
 |------|-------|-------|-------|
 |  q3  |   x   |   q3  |   q3  |
 |------|-------|-------|-------|
+|  q4  |   q4  |   q4  |   q4  |
+|------|-------|-------|-------|
 
 
 d.
@@ -40,3 +40,20 @@ T->bT|aX|cT
 
 X->bX|aY|cX
 Y->bY|cY|epsilon
+
+
+EJ02:
+Dado el alfabeto {0,1,2} para el lenguaje compuesto por todas las palabras que poseen una cantidad impar de '1' y que terminan obligatoriamente con el simbol '0'
+
+a. ER
+b. A.F.D
+c. T.T
+d. G.R
+
+a.
+
+b.
+
+ q0 ---> q1 ---> q2
+|__|
+02 1
