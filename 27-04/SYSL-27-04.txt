@@ -1,0 +1,42 @@
+EJ01: 
+Sea el alfabeto ={a,b,c} y el lenguaje compuesto por todas las palabras que comienzan con la letra 'b' y que poseen exactamente dos letras 'a' en toda la cadena. Hallar:
+	
+a. La ER que lo representa
+b. El A.F.D que lo reconoce
+c. La T.T
+d. Crear la G.R
+
+a.
+b*a*a*c^n + b*a*c^n*a + b*c^n+a+a
+
+
+b.
+                        bc
+    b       a       a  |--|
+q0 ---> q1 ---> q2 ---> q3
+|      |__|    |__|      |
+|       bc	bc       |
+|                   a    |
+|---------->q4---------->|
+           |__|
+	    abc
+c.
+
+|Estado|   a	   b       c
+|------|-------|-------|-------|
+|  q0  |   x   |   q1  |   x   |
+|------|-------|-------|-------|
+|  q1  |   q2  |   q1  |   q1  |
+|------|-------|-------|-------|
+|  q2  |   q3  |   q2  |   q2  |
+|------|-------|-------|-------|
+|  q3  |   x   |   q3  |   q3  |
+|------|-------|-------|-------|
+
+
+d.
+S-bT
+T->bT|aX|cT
+
+X->bX|aY|cX
+Y->bY|cY|epsilon
