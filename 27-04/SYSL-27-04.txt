@@ -69,6 +69,7 @@ c. T.T
 d. G.R
 
 a.
+a*(a+b+c)^n*aa*(a+b+c)^n*b^ncma
 
 b.
 
