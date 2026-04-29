@@ -57,3 +57,47 @@ b.
  q0 ---> q1 ---> q2
 |__|
 02 1
+
+
+
+Ej03:
+Dado el alfabero {a,b,c} Para el lenguaje compuesto por todas las palabras que comeinzan con 'a', terminan con 'b', y contienen la subcadena 'aa' al menos una vez en su interior - Encontrar:
+
+a. ER
+b. A.F.D
+c. T.T
+d. G.R
+
+a.
+
+b.
+
+    a       a       a       b
+q0 ---> q1 ---> q2 ---> q3 ---> q4
+       |__|            |__|    |__|
+        abc             abc     b
+
+
+c.
+
+|Estado|   a	   b       c
+|------|-------|-------|-------|
+|  q0  |   q0  |   x   |   x   |
+|------|-------|-------|-------|
+|  q1  |   q2  |   q1  |   q1  |
+|------|-------|-------|-------|
+|  q2  |   q3  |   x   |   x   |
+|------|-------|-------|-------|
+|  q3  |   q3  |   q4  |   q3  |
+|------|-------|-------|-------|
+|  q4  |   x   |   q4  |   x   |
+|------|-------|-------|-------|
+
+
+d.
+
+S -> aT
+T -> aT|bT|cT|aaX
+
+X -> aX|bX|cX|bY
+Y -> bY | epsilon
